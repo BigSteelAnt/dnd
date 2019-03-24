@@ -4,7 +4,7 @@
 <md-card v-if="show" style="animation-duration: 3s" id="title" class="md-elevation-24">
   <md-card-header >
     <div class="md-title">
-      Design and Develop1
+      Design and Develop
     </div>
     <div class="md-subhead">
       by Anthony
@@ -77,7 +77,7 @@ export default {
   margin-right: 30px;
 }
 #card1, #card3 {
-    width: 35%;
+    width: 40%;
     padding-bottom: 15%;
     margin: 4px;
     margin-left: 15%;
@@ -85,7 +85,7 @@ export default {
     vertical-align: top;
 }
 #card2, #card4 {
-    width: 35%;
+    width: 40%;
     padding-bottom: 15%;
     margin: 4px;
     display: inline-block;
