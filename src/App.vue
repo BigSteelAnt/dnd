@@ -13,7 +13,7 @@
 </md-card>
 </transition>
 <transition name="slideLeft">
-<md-card v-if="show" style="animation-duration: 3s" id="card1" class="md-elevation-24">
+<md-card v-if="show" style="animation-duration: 3s" id="card1" class="md-elevation-24 md-primary">
   <md-card-header>
     <div class="md-title">
       About
@@ -22,7 +22,7 @@
 </md-card>
 </transition>
 <transition name="slideRight">
-<md-card v-if="show" style="animation-duration: 3s" id="card2" class="md-elevation-24">
+<md-card v-if="show" style="animation-duration: 3s" id="card2" class="md-elevation-24 md-accent">
   <md-card-header>
     <div class="md-title">
       Services
@@ -31,7 +31,7 @@
 </md-card>
 </transition>
 <transition name="slideUp">
-<md-card v-if="show" style="animation-duration: 3s" id="card3" class="md-elevation-24">
+<md-card v-if="show" style="animation-duration: 3s" id="card3" class="md-elevation-24 md-transparent">
   <md-card-header>
     <div class="md-title">
       Technology
@@ -77,7 +77,7 @@ export default {
   margin-right: 30px;
 }
 #card1, #card3 {
-    width: 40%;
+    width: 35%;
     padding-bottom: 15%;
     margin: 4px;
     margin-left: 15%;
@@ -85,7 +85,7 @@ export default {
     vertical-align: top;
 }
 #card2, #card4 {
-    width: 40%;
+    width: 35%;
     padding-bottom: 15%;
     margin: 4px;
     display: inline-block;
