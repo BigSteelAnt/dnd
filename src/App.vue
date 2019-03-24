@@ -4,7 +4,7 @@
 <md-card v-if="show" style="animation-duration: 3s" id="title" class="md-elevation-24">
   <md-card-header >
     <div class="md-title">
-      Design and Develop
+      Design and Develop1
     </div>
     <div class="md-subhead">
       by Anthony
