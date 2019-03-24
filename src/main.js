@@ -16,8 +16,5 @@ new Vue({
   el: '#app',
   router,
   components: { App },
-  template: '<App/>',
-  data: {
-    show: true
-  }
+  template: '<App/>'
 })
