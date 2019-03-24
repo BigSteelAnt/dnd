@@ -73,13 +73,12 @@ export default {
 <style>
 #app {
   margin-top: 60px;
-  margin-left:30px;
+  margin-left: 30px;
   margin-right: 30px;
 }
 #card1, #card3 {
     width: 35%;
     padding-bottom: 15%;
-    height: 0;
     margin: 4px;
     margin-left: 15%;
     display: inline-block;
@@ -88,7 +87,6 @@ export default {
 #card2, #card4 {
     width: 35%;
     padding-bottom: 15%;
-    height: 0;
     margin: 4px;
     display: inline-block;
     vertical-align: top;
