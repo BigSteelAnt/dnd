@@ -13,7 +13,7 @@
 </md-card>
 </transition>
 <transition name="slideLeft">
-<md-card v-if="show" style="animation-duration: 3s" id="card1" class="md-elevation-24 md-primary">
+<md-card v-if="show" style="animation-duration: 3s" id="card1" class="md-elevation-24 md-primary" md-theme="red-card">
   <md-card-header>
     <div class="md-title">
       About
@@ -22,7 +22,7 @@
 </md-card>
 </transition>
 <transition name="slideRight">
-<md-card v-if="show" style="animation-duration: 3s" id="card2" class="md-elevation-24 md-accent">
+<md-card v-if="show" style="animation-duration: 3s" id="card2" class="md-elevation-24 md-primary" md-theme="blue-card">
   <md-card-header>
     <div class="md-title">
       Services
@@ -31,7 +31,7 @@
 </md-card>
 </transition>
 <transition name="slideUp">
-<md-card v-if="show" style="animation-duration: 3s" id="card3" class="md-elevation-24 md-transparent">
+<md-card v-if="show" style="animation-duration: 3s" id="card3" class="md-elevation-24 md-primary" md-theme="yellow-card">
   <md-card-header>
     <div class="md-title">
       Technology
@@ -40,7 +40,7 @@
 </md-card>
 </transition>
   <transition name="slideUp">
-<md-card v-if="show" style="animation-duration: 3s" id="card4" class="md-elevation-24">
+<md-card v-if="show" style="animation-duration: 3s" id="card4" class="md-elevation-24 md-primary" md-theme="white-card">
   <md-card-header>
     <div class="md-title">
       Contact
@@ -72,17 +72,17 @@ export default {
 
 <style lang="scss">
 @import "~vue-material/dist/theme/engine";
-@include md-register-theme("green-card", (
-    primary: md-get-palette-color(green, 500)
+@include md-register-theme("white-card", (
+    primary: md-get-palette-color(white, 200)
 ));
-@include md-register-theme("black-card", (
-    primary: md-get-palette-color(black, 500)
+@include md-register-theme("red-card", (
+    primary: md-get-palette-color(red, 200)
 ));
-@include md-register-theme("purple-card", (
-    primary: md-get-palette-color(purple, 500)
+@include md-register-theme("blue-card", (
+    primary: md-get-palette-color(blue, 200)
 ));
-@include md-register-theme("orange-card", (
-    primary: md-get-palette-color(orange, 500)
+@include md-register-theme("yellow-card", (
+    primary: md-get-palette-color(yellow, 200)
 ));
 @import "~vue-material/dist/base/theme";
 @import "~vue-material/dist/components/MdCard/theme";
