@@ -12,8 +12,8 @@
   </md-card-header>
 </md-card>
 </transition>
-<transition name="slideLeft">
-<md-card v-if="show" style="animation-duration: 3s" id="card1" class="md-elevation-24 md-primary" md-theme="red-card">
+<transition name="slideLeft" enter-active-class="slideLeft" leave-active-class="bounceRight-leave">
+<md-card v-if="show" style="animation-duration: 3s" id="card1" class="md-elevation-24 md-primary" md-theme="red-card" @click.native="onAlert()">
   <md-card-header>
     <div class="md-title">
       About
@@ -64,6 +64,9 @@ export default {
   methods: {
     onload: function () {
       this.show = true
+    },
+    onAlert: function () {
+      alert('test')
     }
   },
   name: 'App'
