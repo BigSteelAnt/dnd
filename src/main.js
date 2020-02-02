@@ -7,7 +7,10 @@ import VueMaterial from 'vue-material'
 import 'vue-material/dist/vue-material.min.css'
 import 'vue-material/dist/theme/default-dark.css'
 import 'vue2-animate/dist/vue2-animate.min.css'
+import VueI18n from 'vue-i18n'
+import i18n from './i18n'
 
+Vue.use(VueI18n)
 Vue.use(VueMaterial)
 Vue.config.productionTip = false
 
@@ -16,5 +19,6 @@ new Vue({
   el: '#app',
   router,
   components: { App },
+  i18n,
   template: '<App/>'
 })
